@@ -18,14 +18,17 @@ Projeto Final - Turma On11 do curso Todas em Tech - {reprograma}
 ``` bash 
 git clone https://github.com/karlaathamiris/reprograma-empodera-juba.git
 ```
-2. Abra o arquivo no Visual Studio Code
+2. Abra o projeto no Visual Studio Code
 3. Abra o terminal, com o atalho CTRL + J
 
 **Para os passos seguintes, você deve ter instalado e configurado em sua máquina o nodejs, o npm e suas dependências**
 
-4. execute os comandos
+4. O comando abaixo só precisará ser executado a primeira vez para instalar as dependêcias
 ``` bash
 $ npm install
+```
+5. Para rodar/executar o projeto, execute o comando
+``` bash
 $ npm start
 ```
 
@@ -87,7 +90,10 @@ https://reprograma-empodera-juba.herokuapp.com/
 		"tratamento"
 	],
 	"phone": "88 999999999",
-	"social": "@testeboxbraids"
+	"social": "@testeboxbraids",
+  "paymentMethods": [
+    "id_do_metodo_de_pagamento"
+  ]
 
 ```
 
