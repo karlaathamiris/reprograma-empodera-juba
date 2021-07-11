@@ -27,7 +27,7 @@ git clone https://github.com/karlaathamiris/reprograma-empodera-juba.git
 ``` bash
 $ npm install
 ```
-5. Para rodar/executar o projeto, execute o comando
+5. Antes de rodar/executar o projeto, é necessário executar o comando
 ``` bash
 $ npm start
 ```
@@ -105,15 +105,14 @@ Através do ID do local requerido.<p>
 <p>Com o ID como referência, essa rota deleta um empreendimento da sua base de dados.<p>
 
 
-### Métodos de Pagamento
+### Métodos de Pagamento  
 Possuem uma tabela e rotas próprias, pré-cadastrada no banco de dados com todos os métodos de pagamentos disponíveis para uso e relacionamento a partir de seus IDs. 
 Para poder fazer a correspondência correta, busque a partir da rota:
 
 **GET/empodera/payment/getAll**
-Irá retornar os métodos já populados no MongoDB, como no exemplo:
+<p>Irá retornar os métodos já populados no MongoDB, como no exemplo:<p>
 
 ```json
-{
   "payment": [
     {
       "_id": "60ea1f7ff555442c82bcc08f",
@@ -125,5 +124,4 @@ Irá retornar os métodos já populados no MongoDB, como no exemplo:
       "label": "Cartão de crédito",
       "__v": 0
     }
-}
 ```
