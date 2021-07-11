@@ -103,3 +103,27 @@ Através do ID do local requerido.<p>
 
 **DELETE/empodera/braids/:id**
 <p>Com o ID como referência, essa rota deleta um empreendimento da sua base de dados.<p>
+
+
+### Métodos de Pagamento
+Possuem uma tabela e rotas próprias, pré-cadastrada no banco de dados com todos os métodos de pagamentos disponíveis para uso e relacionamento a partir de seus IDs. 
+Para poder fazer a correspondência correta, busque a partir da rota:
+
+**GET/empodera/payment/getAll**
+Irá retornar os métodos já populados no MongoDB, como no exemplo:
+
+```json
+{
+  "payment": [
+    {
+      "_id": "60ea1f7ff555442c82bcc08f",
+      "label": "Boleto",
+      "__v": 0
+    },
+    {
+      "_id": "60ea1f89f555442c82bcc091",
+      "label": "Cartão de crédito",
+      "__v": 0
+    }
+}
+```
